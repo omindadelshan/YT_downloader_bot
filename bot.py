@@ -25,8 +25,8 @@ with app:
 @logged
 @app.on_message(filters.command(["start", f"start@{botname}"], prefixes="/") & ~filters.edited)
 def start(client, message):
-    text = f"Hello {str(message.from_user.first_name)}, I am a YouTube downloader bot made by @omintras." + \
-        "Please see /help if you want to know how to use me."
+    text = f"Hello {str(message.from_user.first_name)}, I am a YouTube downloader bot made by @omindas." + \
+        "Please see /help if you want to know how to use me🇱🇰."
     app.send_message(chat_id=message.chat.id, text=text)
 
 

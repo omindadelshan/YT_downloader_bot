@@ -25,8 +25,8 @@ with app:
 @logged
 @app.on_message(filters.command(["start", f"start@{botname}"], prefixes="/") & ~filters.edited)
 def start(client, message):
-    text = f"Hello {str(message.from_user.first_name)}, I am a YouTube downloader🇱🇰 bot in telegram made by @omindas." + \
-        "Please see /help if you want to know how to use me🇱🇰 powerd By @sdprojectupdats."
+    text = f"😁Hello🌟 {str(message.from_user.first_name)}, 🔥I am a YouTube downloader🇱🇰 bot in telegram made by @omindas.🤘🤘🤘" + \
+        "***Please see*** /help ***if you want to know how to use me***🇱🇰 powerd By @sdprojectupdates😋 You Can search using🌟@vid inline mode✳️."
     app.send_message(chat_id=message.chat.id, text=text)
 
 
@@ -34,9 +34,9 @@ def start(client, message):
 @logged
 @app.on_message(filters.command(["help", f"help@{botname}"], prefixes="/") & ~filters.edited)
 def help(client, message):
-    text = 'Download YT videos and audios by:\n' + \
-        '/video link\n' + \
-        '/audio link'
+    text = '***📤Download YT videos and audios by📤👇***:\n' + \
+        '/video [video link]\n' + \
+        '/audio [video or audio link](you Can a links search using @vid inline Mode'
     app.send_message(chat_id=message.chat.id, text=text)
 
 
